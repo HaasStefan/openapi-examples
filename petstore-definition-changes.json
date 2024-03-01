@@ -923,9 +923,6 @@
           "type": "integer",
           "format": "int64"
         },
-        "category": {
-          "$ref": "#/definitions/Category"
-        },
         "name": {
           "type": "string",
           "example": "doggie"
@@ -974,6 +971,9 @@
         "id": {
           "type": "integer",
           "format": "int64"
+        },
+        "newProp": {
+          "type": "string"
         },
         "name": {
           "type": "string"
