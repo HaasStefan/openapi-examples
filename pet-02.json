@@ -81,10 +81,10 @@
           }
         ],
         "responses": {
-          "200": {
-            "description": "successful operation",
+          "400": {
+            "description": "failed operation",
             "schema": {
-              "$ref": "#/definitions/ApiResponse"
+              "$ref": "#/definitions/Pet"
             }
           }
         },
@@ -115,15 +115,7 @@
           "application/xml"
         ],
         "parameters": [
-          {
-            "in": "body",
-            "name": "body",
-            "description": "Pet object that needs to be added to the store",
-            "required": true,
-            "schema": {
-              "$ref": "#/definitions/Pet"
-            }
-          }
+          
         ],
         "responses": {
           "405": {
@@ -200,7 +192,7 @@
         ],
         "parameters": [
           {
-            "name": "status",
+            "name": "hansi",
             "in": "query",
             "description": "Status values that need to be considered for filter",
             "required": true,
@@ -226,9 +218,6 @@
                 "$ref": "#/definitions/Pet"
               }
             }
-          },
-          "400": {
-            "description": "Invalid status value"
           }
         },
         "security": [
@@ -317,7 +306,7 @@
           "200": {
             "description": "successful operation",
             "schema": {
-              "$ref": "#/definitions/Pet"
+              "$ref": "#/definitions/Tag"
             }
           },
           "400": {
@@ -897,7 +886,7 @@
         }
       }
     },
-    "Category": {
+    "AnotherCategory": {
       "type": "object",
       "properties": {
         "id": {
@@ -1039,9 +1028,6 @@
           "type": "string"
         },
         "email": {
-          "type": "string"
-        },
-        "password": {
           "type": "string"
         },
         "phone": {
